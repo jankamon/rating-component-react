@@ -1,13 +1,110 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(216, 12%, 8%);
+  font-family: Overpass, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.card {
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: hsl(213, 19%, 18%);
+  background-image: radial-gradient(
+  circle at top,
+  hsla(0, 0%, 100%, 0.05) 0%,
+  transparent 80%
+)
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+      width: 85%;
+      height: 85%;
+      padding-bottom: 25px;
+  }
+}
+
+#thank-state {
+  text-align: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+ul {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+
+.circle {
+  padding: 10px;
+  border-radius: 50%;
+  background-color:  hsla(216, 12%, 54%, 0.1);
+  border: none;
+}
+
+.radio-button {
+  width: 3rem;
+  height: 3rem;
+  color:hsl(217, 12%, 63%);
+  font-weight: 700;
+}
+
+.radio-button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.radio-button:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+#submit-button {
+  border-radius: 2rem;
+  width: 100%;
+  height: 2.75rem;
+  text-transform: uppercase;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  letter-spacing: 0.1rem;
+  margin-top: 2%;
+}
+
+#submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+#result {
+  color:hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, 0.1);
+  font-weight: 400;
+  border-radius: 1rem;
+  padding: 1% 2%;
+  width: 45%;
+  margin: 7% auto;
 }
