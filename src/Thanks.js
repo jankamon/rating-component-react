@@ -2,11 +2,11 @@ import React from 'react'
 import './index.css';
 import illustration from "./images/illustration-thank-you.svg";
 
-export default function Thanks() {
+export default function Thanks({rating}) {
   return (
-    <div id="thank-state" class="card"> 
+    <div id="thank-state" className="card"> 
         <img src={illustration} alt="" />
-        <p id="result">You selected <span id="selected-rating"></span> out of 5</p>
+        <p id="result">You selected {rating} out of 5</p>
 
         <h1>Thank you!</h1>
 
