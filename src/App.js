@@ -8,13 +8,13 @@ function App() {
   const [rating, setRating] = useState('');
 
   const getRating = (event) => {
-      setRating(event.target.innerHTML)
+    setRating(event.target.innerHTML)
   }
 
   const [submitStatus, setSubmitStatus] = useState(false);
 
   const changeSubmit = () => {
-    setSubmitStatus(true);
+    if(rating) {setSubmitStatus(true)};
   }
 
   return (
